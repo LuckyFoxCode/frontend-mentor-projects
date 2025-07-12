@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Node.js dependencies and build output (если будут проекты)
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
