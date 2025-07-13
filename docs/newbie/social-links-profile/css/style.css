@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --GREEN: #c5f82aff;
+  --WHITE: #ffffff;
+  --G700: #333333ff;
+  --G800: #1f1f1fff;
+  --G900: #141414ff;
+
+  --font: "Inter", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--G900);
+  color: var(--WHITE);
+  display: grid;
+  place-items: center;
+  padding-inline: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--G800);
+  border-radius: 1rem;
+  padding: clamp(1rem, 2vw, 2rem);
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-card__image {
+  width: clamp(5rem, 3vw, 7rem);
+  height: clamp(5rem, 3vw, 7rem);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.profile-card__name {
+  text-transform: capitalize;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card__location {
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  text-transform: capitalize;
+  color: var(--GREEN);
+  margin-bottom: 1.5rem;
+}
+
+.profile-card__role {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  color: var(--WHITE);
+  opacity: 0.7;
+}
+
+.social {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.social__item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.75rem;
+  background-color: var(--G700);
+  border-radius: 0.5rem;
+}
+
+.social__item_link:hover {
+  background-color: var(--GREEN);
+  color: var(--G700);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .profile-card__image {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .profile-card__image {
+    width: 7rem;
+    height: 7rem;
+  }
+}
