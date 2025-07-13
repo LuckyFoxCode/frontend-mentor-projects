@@ -4,7 +4,7 @@ Task: [Social Links Profile](https://www.frontendmentor.io/challenges/social-lin
 
 ## 🔗 Live Preview
 
-[🌐 Open in browser](https://luckyfox.github.io/frontend-mentor-projects/social-links-profile/)
+[🌐 Open in browser](https://luckyfoxcode.github.io/frontend-mentor-projects/newbie/social-links-profile/)
 
 ## 🛠️ Technologies Used
 
