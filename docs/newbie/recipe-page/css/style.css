@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --WHITE: #ffffffff;
+  --ROSE50: #fff5faff;
+  --ROSE800: #7b284fff;
+  --STONE100: #f3e6d8ff;
+  --STONE150: #e4ded8ff;
+  --STONE600: #5f574eff;
+  --STONE900: #302d2cff;
+  --BROWN800: #854632ff;
+
+  --font-main: "Young Serif", serif;
+  --font-second: "Outfit", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--STONE100);
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  background-color: var(--WHITE);
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.recipe {
+  margin-bottom: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+.recipe__title {
+  font-size: clamp(2rem, 0.9437rem + 4.507vw, 5rem);
+  line-height: 2rem;
+  text-transform: capitalize;
+  margin-bottom: clamp(1rem, -0.0563rem + 4.507vw, 4rem);
+}
+
+.recipe__description {
+  font-family: var(--font-second);
+  font-size: clamp(1.1rem, 0.7831rem + 1.3521vw, 2rem);
+  color: var(--STONE600);
+}
+
+/* Tablet: 640px */
+@media (min-width: 40rem) {
+  .container {
+    border-radius: 1rem;
+    padding: clamp(1rem, -0.6rem + 4vw, 3rem);
+  }
+
+  .hero {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+
+  .recipe {
+    padding: 0;
+  }
+}
